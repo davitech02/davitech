@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Graceland Multispecialist Hospital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-blue sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="/">
+                <img src="/static/images/logo.png" alt="Graceland Logo" width="50">
+                Graceland Hospital
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white active" href="/services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/locations">Locations</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/book">Book Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/profile">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/login">Login</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/register">Register</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/logout" id="logout-link" style="display: none;">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Section -->
+    <section class="py-5 bg-light animate-on-scroll">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Our Services</h2>
+            <p class="text-center mb-5 animate__animated animate__fadeInUp animate__delay-1s">Explore our comprehensive range of fertility and multispecialty medical services designed to meet your needs.</p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center animate__animated animate__fadeInUp modern-card">
+                        <img src="/static/images/service1.jpg" class="card-img-top modern-img" alt="IVF">
+                        <div class="card-body">
+                            <h5>In-Vitro Fertilization (IVF)</h5>
+                            <p>Our In-Vitro Fertilization (IVF) program is tailored to help couples overcome fertility challenges. Using cutting-edge reproductive technology, our experienced fertility specialists provide personalized treatment plans, including ovarian stimulation, egg retrieval, fertilization, and embryo transfer. We offer advanced techniques like Intracytoplasmic Sperm Injection (ICSI) and Preimplantation Genetic Testing (PGT) to maximize success rates. Our compassionate team supports you through every step, ensuring emotional and medical care of the highest standard.</p>
+                            <a href="/book" class="btn btn-outline-primary">Book Consultation</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center animate__animated animate__fadeInUp animate__delay-1s modern-card">
+                        <img src="/static/images/service2.jpg" class="card-img-top modern-img" alt="Antenatal">
+                        <div class="card-body">
+                            <h5>Antenatal Care</h5>
+                            <p>Our Antenatal Care program provides comprehensive support for expectant mothers throughout pregnancy. We offer regular check-ups, ultrasound scans, nutritional counseling, and prenatal screenings to monitor the health of both mother and baby. Our team of obstetricians and midwives ensures early detection of potential complications, personalized birth plans, and education on labor and delivery. With a focus on comfort and safety, we strive to make your pregnancy journey smooth and stress-free.</p>
+                            <a href="/book" class="btn btn-outline-primary">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center animate__animated animate__fadeInUp animate__delay-2s modern-card">
+                        <img src="/static/images/service3.jpg" class="card-img-top modern-img" alt="Neonatal">
+                        <div class="card-body">
+                            <h5>Neonatal Care</h5>
+                            <p>Our state-of-the-art Neonatal Intensive Care Unit (NICU) is equipped to provide specialized care for newborns, particularly premature or critically ill infants. Our NICU features advanced technology, including incubators, ventilators, and continuous monitoring systems, staffed by expert neonatologists and nurses. We offer round-the-clock care, nutritional support, and developmental assessments to ensure the best outcomes for your baby. Our family-centered approach keeps parents informed and involved at every stage.</p>
+                            <a href="/book" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>About Graceland</h5>
+                    <p>Leading fertility and multispecialty hospital in Awka, Nigeria.</p>
+                    <a href="/about" class="btn btn-outline-light">Learn More</a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/locations">Locations</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/book">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Newsletter</h5>
+                    <form id="newsletter-form">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="newsletter-email" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <p class="mt-2 small">Stay updated with health tips and hospital news.</p>
+                </div>
+            </div>
+            <div class="text-center pt-3">
+                <p>&copy; 2025 Graceland Multispecialist Hospital and Fertility Center Awka. All rights reserved.</p>
+                <p>
+                    <a href="https://facebook.com/gracelandhospital" class="mx-2">Facebook</a> |
+                    <a href="https://tiktok.com/@gracelandhospital" class="mx-2">TikTok</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

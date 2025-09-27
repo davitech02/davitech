@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Graceland Multispecialist Hospital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-blue sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="/">
+                <img src="/static/images/logo.png" alt="Graceland Logo" width="50">
+                Graceland Hospital
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/locations">Locations</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-white active" href="/book">Book Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/profile">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/login">Login</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/register">Register</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/logout" id="logout-link" style="display: none;">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section animate-on-scroll" style="background-image: url('/static/images/hospital-bg.jpg');">
+        <div class="container text-center text-white py-5">
+            <h1 class="hero-title">Book Your Appointment</h1>
+            <p class="hero-slogan">Schedule a consultation with our expert specialists today for personalized care.</p>
+        </div>
+    </section>
+
+    <!-- Book Appointment Form -->
+    <section class="py-5 bg-light animate-on-scroll book-section">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Schedule Your Appointment</h2>
+            <p class="text-center mb-5 animate__animated animate__fadeInUp animate__delay-1s">Select a doctor, date, and time. Payment of 5000 NGN is required to confirm your booking.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card modern-card animate__animated animate__fadeInUp">
+                        <div class="card-body p-4">
+                            <form id="book-form" novalidate>
+                                <div class="mb-3">
+                                    <label for="doctor_id" class="form-label">Select Doctor</label>
+                                    <select class="form-control" id="doctor_id" name="doctor_id" required>
+                                        <option value="">Choose a doctor</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select a doctor.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="date" class="form-label">Preferred Date</label>
+                                    <input type="date" class="form-control" id="date" name="date" min="{{ '2025-09-23' }}" required>
+                                    <div class="invalid-feedback">Please select a date.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="time" class="form-label">Preferred Time</label>
+                                    <select class="form-control" id="time" name="time" required>
+                                        <option value="">Choose a time</option>
+                                        <option value="09:00">9:00 AM</option>
+                                        <option value="10:00">10:00 AM</option>
+                                        <option value="11:00">11:00 AM</option>
+                                        <option value="14:00">2:00 PM</option>
+                                        <option value="15:00">3:00 PM</option>
+                                        <option value="16:00">4:00 PM</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select a time.</div>
+                                </div>
+                                <div class="mb-3 text-center">
+                                    <h5 class="text-primary">Total: 5000 NGN</h5>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Proceed to Payment</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>About Graceland</h5>
+                    <p>Leading fertility and multispecialty hospital in Awka, Nigeria.</p>
+                    <a href="/about" class="btn btn-outline-light">Learn More</a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="/blog">Blog</a></li>
+                        <li><a href="/locations">Locations</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/book">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Newsletter</h5>
+                    <form id="newsletter-form">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="newsletter-email" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <p class="mt-2 small">Stay updated with health tips and hospital news.</p>
+                </div>
+            </div>
+            <div class="text-center pt-3">
+                <p>&copy; 2025 Graceland Multispecialist Hospital and Fertility Center Awka. All rights reserved.</p>
+                <p>
+                    <a href="https://facebook.com/gracelandhospital" class="mx-2">Facebook</a> |
+                    <a href="https://tiktok.com/@gracelandhospital" class="mx-2">TikTok</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="/static/js/main.js"></script>
+    <script>
+        // Load doctors
+        fetch('/api/doctors')
+            .then(response => response.json())
+            .then(doctors => {
+                const select = document.getElementById('doctor_id');
+                doctors.forEach(doctor => {
+                    const option = document.createElement('option');
+                    option.value = doctor.id;
+                    option.textContent = `${doctor.name} - ${doctor.specialty}`;
+                    select.appendChild(option);
+                });
+            })
+            .catch(error => alert('Error loading doctors: ' + error));
+
+        // Form submission
+        document.getElementById('book-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const token = localStorage.getItem('jwt_token');
+            if (!token) {
+                alert('Please login to book an appointment');
+                window.location.href = '/login';
+                return;
+            }
+            fetch('/book', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.payment_url) {
+                    window.location.href = data.payment_url;
+                } else {
+                    alert(data.error || 'Booking failed');
+                }
+            })
+            .catch(error => alert('Error: ' + error));
+        });
+
+        // Check authentication on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const token = localStorage.getItem('jwt_token');
+            if (!token) {
+                alert('Please login to access this page');
+                window.location.href = '/login';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,669 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.bg-blue {
+    background-color: #007BFF;
+}
+
+.bg-red-accent {
+    background-color: #DC3545;
+}
+
+.navbar {
+    transition: all 0.3s ease;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #DC3545 !important;
+}
+
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #007BFF;
+    transition: transform 0.3s ease;
+}
+
+/* Profile Picture Styles */
+.profile-picture-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #007BFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.profile-picture:hover {
+    transform: scale(1.05);
+}
+
+.profile-picture-upload {
+    margin-top: 15px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background-color: #DC3545;
+    border-color: #DC3545;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+}
+
+.btn-outline-primary {
+    border-color: #007BFF;
+    color: #007BFF;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007BFF;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #007BFF;
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #DC3545;
+    text-decoration: underline;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+.achievement-badge {
+    display: flex;
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center; /* Center content */
+    background: #DC3545; /* Red background */
+    color: #ffffff; /* White text */
+    padding: 1.5rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for badge */
+}
+
+.achievement-badge i {
+    margin-bottom: 0.5rem; /* Space between icon and text */
+}
+
+/* Animations (from Kelina, using animate.css) */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+/* Hero Section: Hospital Name and Slogan */
+.hero-section .hero-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Very bold */
+    font-size: 3.5rem; /* Larger for emphasis */
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for contrast */
+}
+
+.hero-section .hero-slogan {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Very bold to match hospital name */
+    font-size: 1.5rem; /* Slightly smaller than h1 but bold */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+}
+
+/* Hero Container Overlay */
+.hero-section .container {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* All Section Subheadings */
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Very bold sans-serif */
+    font-size: 2.5rem; /* Consistent with hero styling */
+}
+
+/* About Section Background */
+.about-section {
+    background: linear-gradient(135deg, #007BFF 0%, #DC3545 100%); /* Blue to red gradient */
+    color: #ffffff; /* White text for contrast */
+}
+
+/* Ensure text in About section is readable */
+.about-section p,
+.about-section h4 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow for readability */
+}
+
+/* Modern Card Style for Images and FAQ */
+.modern-card {
+    border: none; /* Remove default border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.modern-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.modern-img {
+    border-radius: 15px 15px 0 0; /* Rounded top corners for card-img-top */
+    object-fit: cover; /* Ensure images fit nicely */
+}
+
+.modern-img.rounded-circle {
+    border-radius: 50%; /* Keep circular for testimonial images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for circular images */
+}
+
+/* FAQ Accordion Styling */
+.accordion-item {
+    background: #ffffff; /* White background for accordion items */
+}
+
+.accordion-button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Bold for FAQ questions */
+    color: #007BFF; /* Blue for questions */
+}
+
+.accordion-button:not(.collapsed) {
+    background: #007BFF; /* Blue background when expanded */
+    color: #ffffff; /* White text when expanded */
+}
+
+.accordion-body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #333333; /* Dark text for readability */
+}
+
+/* Styles for Login and Register Pages */
+.auth-page {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.auth-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Default dark overlay */
+    transition: background 0.3s ease;
+    z-index: 1;
+}
+
+.auth-page.darken::before {
+    background: rgba(0, 0, 0, 0.7); /* Darker overlay when input is focused */
+}
+
+.auth-page .navbar,
+.auth-page section {
+    position: relative;
+    z-index: 2; /* Ensure content is above overlay */
+}
+
+.auth-page section {
+    background: none; /* Remove section overlay */
+}
+
+.auth-page .card {
+    background: #ffffff; /* Solid white card */
+    z-index: 2; /* Ensure card is above overlay */
+}
+
+.auth-page .form-label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #333333;
+}
+
+.auth-page .btn-primary {
+    background: #007BFF;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.auth-page .btn-primary:hover {
+    background: #DC3545; /* Red on hover for theme consistency */
+    border-color: #DC3545;
+}
+
+.auth-page .text-primary {
+    color: #007BFF !important;
+}
+
+.auth-page .text-primary:hover {
+    color: #DC3545 !important; /* Red on hover */
+}
+
+/* Styles for Services Page */
+.services-section .card-body p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333333;
+    text-align: left; /* Align text left for readability */
+}
+
+.services-section .card-body h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+.services-section .card {
+    border-left: none; /* Remove default blue border for modern-card consistency */
+}
+
+/* Styles for Blog Page */
+.blog-section .card-body p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333333;
+    text-align: left; /* Align text left for readability */
+}
+
+.blog-section .card-body h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+.blog-section .card {
+    border-left: none; /* Remove default blue border for modern-card consistency */
+}
+
+/* Styles for About Page */
+.about-section .card-body p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333333;
+    text-align: left; /* Align text left for readability */
+}
+
+.about-section .card-body h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+.about-section .card {
+    border-left: none; /* Remove default blue border for modern-card consistency */
+}
+
+/* Styles for Contact Page */
+.contact-section .card-body p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333333;
+}
+
+.contact-section .card-body h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+.contact-section .form-label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #333333;
+}
+
+.contact-section .btn-primary {
+    background: #007BFF;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.contact-section .btn-primary:hover {
+    background: #DC3545;
+    border-color: #DC3545;
+}
+
+.contact-section .card {
+    border-left: none; /* Remove default blue border for modern-card consistency */
+}
+
+/* Styles for Locations Page */
+.locations-section .card-body p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333333;
+}
+
+.locations-section .card-body h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+.locations-section .card {
+    border-left: none; /* Remove default blue border for modern-card consistency */
+}
+
+.locations-section iframe {
+    border-radius: 10px; /* Rounded corners for maps */
+}
+
+/* Styles for Profile Page */
+.profile-section .card-body p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333333;
+}
+
+.profile-section .card-body h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+.profile-section .form-label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #333333;
+}
+
+.profile-section .btn-primary {
+    background: #007BFF;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.profile-section .btn-primary:hover {
+    background: #DC3545;
+    border-color: #DC3545;
+}
+
+.profile-section .card {
+    border-left: none; /* Remove default blue border for modern-card consistency */
+}
+
+.profile-section .profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Ensure image fits within circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for profile picture */
+}
+
+.profile-section .table {
+    font-size: 0.95rem;
+    color: #333333;
+}
+
+.profile-section .table th {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #007BFF;
+}
+
+/* Book Appointment Page Specific Styles */
+.book-section {
+    padding: 60px 0;
+}
+
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-slogan {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.modern-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.modern-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #333;
+}
+
+.form-control {
+    border-radius: 8px;
+    border-color: #ced4da;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.text-primary {
+    color: #007BFF !important;
+}
+
+.invalid-feedback {
+    display: none;
+}
+
+.form-control:invalid:focus {
+    border-color: #DC3545;
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}
+
+.form-control:invalid ~ .invalid-feedback {
+    display: block;
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Ensure navbar and footer styles match */
+.bg-blue {
+    background-color: #007BFF;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ccc;
+}
+
+/* Profile Page Specific Styles */
+.profile-section {
+    padding: 60px 0;
+}
+
+.profile-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+#profile-picture {
+    border: 4px solid #007BFF;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #333;
+}
+
+.form-control {
+    border-radius: 8px;
+    border-color: #ced4da;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.list-group-item {
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+}
+
+.text-success {
+    color: #28a745 !important;
+}
+
+.text-warning {
+    color: #ffc107 !important;
+}

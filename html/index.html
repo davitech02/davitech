@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graceland Multispecialist Hospital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-blue sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="/">
+                <img src="/static/images/logo.png" alt="Graceland Logo" width="50">
+                Graceland Hospital
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/locations">Locations</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/book">Book Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/profile">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/login">Login</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/register">Register</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/logout" id="logout-link" style="display: none;">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section animate-on-scroll" style="background-image: url('/static/images/hospital-bg.jpg');">
+        <div class="container text-white py-5">
+            <div class="text-end">
+                <h1 class="display-4 hero-title animate__animated animate__fadeInUp">Graceland Multispecialist Hospital and Fertility Center Awka</h1>
+                <p class="lead hero-slogan animate__animated animate__fadeInUp animate__delay-1s">Giving Smile to Waiting Parents</p>
+            </div>
+            <div class="text-center">
+                <a href="/book" class="btn btn-primary btn-lg mx-2 animate__animated animate__fadeInUp animate__delay-2s">Book Appointment</a>
+                <a href="/contact" class="btn btn-outline-light btn-lg mx-2 animate__animated animate__fadeInUp animate__delay-2s">Consult Virtually</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="py-5 bg-light animate-on-scroll">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Our Services</h2>
+            <p class="text-center mb-5 animate__animated animate__fadeInUp animate__delay-1s">Comprehensive care in fertility and multispecialty medicine.</p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center animate__animated animate__fadeInUp modern-card">
+                        <img src="/static/images/service1.jpg" class="card-img-top modern-img" alt="IVF">
+                        <div class="card-body">
+                            <h5>In-Vitro Fertilization (IVF)</h5>
+                            <p>Advanced reproductive technologies for fertility challenges.</p>
+                            <a href="/services" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center animate__animated animate__fadeInUp animate__delay-1s modern-card">
+                        <img src="/static/images/service2.jpg" class="card-img-top modern-img" alt="Antenatal">
+                        <div class="card-body">
+                            <h5>Antenatal Care</h5>
+                            <p>Expert prenatal care for expectant mothers.</p>
+                            <a href="/services" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center animate__animated animate__fadeInUp animate__delay-2s modern-card">
+                        <img src="/static/images/service3.jpg" class="card-img-top modern-img" alt="Neonatal">
+                        <div class="card-body">
+                            <h5>Neonatal Care</h5>
+                            <p>State-of-the-art NICU for newborns.</p>
+                            <a href="/services" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-5 animate-on-scroll about-section">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInUp">About Graceland</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4 animate__animated animate__fadeInUp">
+                    <h4>Our Mission</h4>
+                    <p>To promote, preserve, and restore health through expert fertility and multispecialty care.</p>
+                </div>
+                <div class="col-md-6 mb-4 animate__animated animate__fadeInUp animate__delay-1s">
+                    <h4>Our Vision</h4>
+                    <p>To be Nigeria’s leading center for fertility and maternal health, delivering world-class care.</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="/about" class="btn btn-primary animate__animated animate__fadeInUp animate__delay-2s">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="py-5 bg-light animate-on-scroll">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Our Achievements</h2>
+            <div class="row text-center">
+                <div class="col-md-3 mb-4 animate__animated animate__fadeInUp">
+                    <span class="achievement-badge">
+                        <i class="bi bi-heart-pulse display-4 text-primary"></i>
+                        <span>1,000+ IVF Cycles</span>
+                    </span>
+                    <p>Successful fertility treatments since 2020.</p>
+                </div>
+                <div class="col-md-3 mb-4 animate__animated animate__fadeInUp animate__delay-1s">
+                    <span class="achievement-badge">
+                        <i class="bi bi-hospital display-4 text-primary"></i>
+                        <span>98% NICU Survival</span>
+                    </span>
+                    <p>Leading neonatal care outcomes in Nigeria.</p>
+                </div>
+                <div class="col-md-3 mb-4 animate__animated animate__fadeInUp animate__delay-2s">
+                    <span class="achievement-badge">
+                        <i class="bi bi-shield-check display-4 text-primary"></i>
+                        <span>Zero Maternal Mortality</span>
+                    </span>
+                    <p>In our antenatal programs since 2021.</p>
+                </div>
+                <div class="col-md-3 mb-4 animate__animated animate__fadeInUp animate__delay-3s">
+                    <span class="achievement-badge">
+                        <i class="bi bi-geo-alt display-4 text-primary"></i>
+                        <span>Multi-City Presence</span>
+                    </span>
+                    <p>Serving Awka with excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section (What Patients Say) -->
+    <section class="py-5 animate-on-scroll">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInUp">What Patients Say About Us</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInUp">
+                    <div class="card text-center modern-card">
+                        <img src="/static/images/patient1.jpg" class="rounded-circle mx-auto mt-3 modern-img" width="100" alt="Sarah">
+                        <div class="card-body">
+                            <p>"Graceland’s IVF team made our dream of parenthood come true."</p>
+                            <p><strong>Sarah A., Lagos</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInUp animate__delay-1s">
+                    <div class="card text-center modern-card">
+                        <img src="/static/images/patient2.jpg" class="rounded-circle mx-auto mt-3 modern-img" width="100" alt="Michael">
+                        <div class="card-body">
+                            <p>"The neonatal care saved our premature baby. Forever grateful."</p>
+                            <p><strong>Michael & Joy, Abuja</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInUp animate__delay-2s">
+                    <div class="card text-center modern-card">
+                        <img src="/static/images/patient3.jpg" class="rounded-circle mx-auto mt-3 modern-img" width="100" alt="Aisha">
+                        <div class="card-body">
+                            <p>"Antenatal care was seamless and professional."</p>
+                            <p><strong>Aisha K., Lagos</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Expert Team Section -->
+    <section class="py-5 bg-light animate-on-scroll">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Meet Our Expert Team</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4 animate__animated animate__fadeInUp">
+                    <h4>Our Dedicated Specialists</h4>
+                    <p>At Graceland Multispecialist Hospital and Fertility Center Awka, our team of highly skilled doctors, nurses, and fertility specialists is committed to providing exceptional care. With expertise in IVF, antenatal care, and neonatal services, we work tirelessly to bring hope and smiles to waiting parents. Our compassionate approach ensures personalized treatment plans tailored to your needs.</p>
+                    <a href="/about" class="btn btn-primary">Learn More About Our Team</a>
+                </div>
+                <div class="col-md-6 mb-4 animate__animated animate__fadeInUp animate__delay-1s">
+                    <img src="/static/images/team.jpg" class="img-fluid rounded modern-img" alt="Our Expert Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Pharmacist Section -->
+<section class="py-5 bg-light animate-on-scroll">
+    <div class="container">
+        <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Meet Our Pharmacist</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4 animate__animated animate__fadeInUp animate__delay-1s">
+                <img src="/static/images/team1.jpg" class="img-fluid rounded modern-img" alt="Our Pharmacist">
+            </div>
+            <div class="col-md-6 mb-4 animate__animated animate__fadeInUp">
+                <h4>Our Dedicated Pharmacists</h4>
+                <p>At Graceland Multispecialist Hospital and Fertility Center Awka, our licensed pharmacists are experts in dispensing medications with precision and care. Specializing in fertility treatments, antenatal care, and general prescriptions, we offer personalized counseling to ensure safe and effective use of your medications. Our goal is to support your health journey every step of the way.</p>
+                <a href="/pharmacy" class="btn btn-primary">Learn More About Our Pharmacy</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Latest Blog Posts Section -->
+    <section class="py-5 bg-light animate-on-scroll">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Latest Blog Posts</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInUp">
+                    <div class="card modern-card">
+                        <img src="/static/images/blog1.jpg" class="card-img-top modern-img" alt="IVF Blog">
+                        <div class="card-body">
+                            <h5>IVF: What to Expect</h5>
+                            <p>Key steps and success factors in the IVF process.</p>
+                            <a href="/blog" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInUp animate__delay-1s">
+                    <div class="card modern-card">
+                        <img src="/static/images/blog2.jpg" class="card-img-top modern-img" alt="Antenatal Blog">
+                        <div class="card-body">
+                            <h5>Antenatal Care Tips</h5>
+                            <p>Essential advice for a healthy pregnancy.</p>
+                            <a href="/blog" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInUp animate__delay-2s">
+                    <div class="card modern-card">
+                        <img src="/static/images/blog3.jpg" class="card-img-top modern-img" alt="Neonatal Blog">
+                        <div class="card-body">
+                            <h5>Neonatal Care Basics</h5>
+                            <p>Supporting your newborn’s early days.</p>
+                            <a href="/blog" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="/blog" class="btn btn-primary animate__animated animate__fadeInUp animate__delay-3s">View All Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light animate-on-scroll">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item modern-card animate__animated animate__fadeInUp">
+                    <h2 class="accordion-header" id="faqHeading1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                            What is the success rate of IVF at Graceland?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Our IVF success rate varies depending on individual factors like age and health conditions. On average, we achieve a 40-50% success rate per cycle, with personalized care to optimize outcomes.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item modern-card animate__animated animate__fadeInUp animate__delay-1s">
+                    <h2 class="accordion-header" id="faqHeading2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                            What does antenatal care at Graceland include?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Our antenatal care includes regular check-ups, ultrasounds, nutritional guidance, and screenings to ensure the health of both mother and baby throughout pregnancy.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item modern-card animate__animated animate__fadeInUp animate__delay-2s">
+                    <h2 class="accordion-header" id="faqHeading3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                            What facilities are available in your NICU?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Our state-of-the-art NICU is equipped with advanced incubators, ventilators, and monitoring systems, staffed by expert neonatologists to provide critical care for newborns.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item modern-card animate__animated animate__fadeInUp animate__delay-3s">
+                    <h2 class="accordion-header" id="faqHeading4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                            How can I book an appointment?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You can book an appointment online via our website’s “Book Appointment” page or by calling our office. We offer flexible scheduling for in-person and virtual consultations.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item modern-card animate__animated animate__fadeInUp animate__delay-4s">
+                    <h2 class="accordion-header" id="faqHeading5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                            Do you offer virtual consultations?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, we provide virtual consultations for initial assessments and follow-ups. Click “Consult Virtually” on our homepage to schedule a session with our specialists.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comment Section -->
+    <section class="py-5 bg-white animate-on-scroll">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Leave a Comment</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card modern-card shadow-sm">
+                        <div class="card-body">
+                            <form id="comment-form" action="/submit-comment" method="post">
+                                <div class="mb-3">
+                                    <label for="comment-name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="comment-name" name="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="comment-email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="comment-email" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="comment-content" class="form-label">Your Comment</label>
+                                    <textarea class="form-control" id="comment-content" name="content" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit Comment</button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-5">
+                        <h3 class="mb-4">Recent Comments</h3>
+                        <div class="comments-list">
+                            <!-- Sample comments for demonstration -->
+                            <div class="card mb-3 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">John Doe</h5>
+                                    <p class="card-text">Great hospital! The staff was very friendly and professional.</p>
+                                    <p class="card-text"><small class="text-muted">Posted on 2023-06-15</small></p>
+                                </div>
+                            </div>
+                            <div class="card mb-3 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jane Smith</h5>
+                                    <p class="card-text">I had a wonderful experience at Graceland Hospital. The doctors were very attentive.</p>
+                                    <p class="card-text"><small class="text-muted">Posted on 2023-06-10</small></p>
+                                </div>
+                            </div>
+                            <div class="card mb-3 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Test User</h5>
+                                    <p class="card-text">This is a test comment. The comment section is working great!</p>
+                                    <p class="card-text"><small class="text-muted">Posted on 2023-06-05</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>About Graceland</h5>
+                    <p>Leading fertility and multispecialty hospital in Awka, Nigeria.</p>
+                    <a href="/about" class="btn btn-outline-light">Learn More</a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/locations">Locations</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/book">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Newsletter</h5>
+                    <form id="newsletter-form">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="newsletter-email" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <p class="mt-2 small">Stay updated with health tips and hospital news.</p>
+                </div>
+            </div>
+            <div class="text-center pt-3">
+                <p>&copy; 2025 Graceland Multispecialist Hospital and Fertility Center Awka. All rights reserved.</p>
+                <p>
+                    <a href="https://facebook.com/gracelandhospital" class="mx-2">Facebook</a> |
+                    <a href="https://tiktok.com/@gracelandhospital" class="mx-2">TikTok</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

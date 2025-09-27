@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Graceland Multispecialist Hospital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-blue sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="/">
+                <img src="/static/images/logo.png" alt="Graceland Logo" width="50">
+                Graceland Hospital
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/locations">Locations</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/book">Book Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link text-white active" href="/profile">Profile</a></li>
+                    <li class="nav-item login-item"><a class="nav-link text-white" href="/login">Login</a></li>
+                    <li class="nav-item register-item"><a class="nav-link text-white" href="/register">Register</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="/logout" id="logout-link" style="display: none;">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section class="py-5 bg-light animate-on-scroll profile-section">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInUp">My Profile</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card modern-card animate__animated animate__fadeInUp">
+                        <div class="card-body p-4 text-center">
+                            <div class="profile-picture-container">
+                                <img src="" alt="Profile Picture" id="profile-picture" class="profile-picture">
+                            </div>
+                            <h4 id="user-name" class="mb-2"></h4>
+                            <p id="user-email" class="text-muted mb-4"></p>
+                            <form id="profile-form" enctype="multipart/form-data">
+                                <div class="mb-3 text-center profile-picture-upload">
+                                    <label for="profile-picture-upload" class="form-label">Update Profile Picture</label>
+                                    <input type="file" class="form-control" id="profile-picture-upload" name="profile-picture" accept="image/*">
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Update Profile</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-center mt-5 mb-4 animate__animated animate__fadeInUp animate__delay-1s">Appointment History</h3>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card modern-card animate__animated animate__fadeInUp">
+                        <div class="card-body p-4">
+                            <ul id="appointment-history" class="list-group list-group-flush"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>About Graceland</h5>
+                    <p>Leading fertility and multispecialist hospital in Awka, Nigeria.</p>
+                    <a href="/about" class="btn btn-outline-light">Learn More</a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="/blog">Blog</a></li>
+                        <li><a href="/locations">Locations</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/book">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Newsletter</h5>
+                    <form id="newsletter-form">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="newsletter-email" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <p class="mt-2 small">Stay updated with health tips and hospital news.</p>
+                </div>
+            </div>
+            <div class="text-center pt-3">
+                <p>&copy; 2025 Graceland Multispecialist Hospital and Fertility Center Awka. All rights reserved.</p>
+                <p>
+                    <a href="https://facebook.com/gracelandhospital" class="mx-2">Facebook</a> |
+                    <a href="https://tiktok.com/@gracelandhospital" class="mx-2">TikTok</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="/static/js/main.js"></script>
+    <script>
+        // Load profile data
+        document.addEventListener('DOMContentLoaded', () => {
+            const token = localStorage.getItem('jwt_token');
+            if (!token) {
+                alert('Please login to view your profile');
+                window.location.href = '/login';
+                return;
+            }
+            
+            // Hide login/register links and show logout link when user is logged in
+            document.querySelector('.login-item').style.display = 'none';
+            document.querySelector('.register-item').style.display = 'none';
+            document.getElementById('logout-link').style.display = 'block';
+
+            fetch('/api/profile', {
+                headers: { 'Authorization': `Bearer ${token}` }
+            })
+            .then(response => {
+                if (!response.ok) throw new Error('Authentication failed');
+                return response.json();
+            })
+            .then(data => {
+                document.getElementById('user-name').textContent = data.name;
+                document.getElementById('user-email').textContent = data.email;
+                document.getElementById('profile-picture').src = data.profile_picture;
+                const appointmentsList = document.getElementById('appointment-history');
+                if (data.appointments.length === 0) {
+                    appointmentsList.innerHTML = '<li class="list-group-item text-center">No appointments yet.</li>';
+                } else {
+                    data.appointments.forEach(apt => {
+                        const li = document.createElement('li');
+                        li.className = 'list-group-item';
+                        li.innerHTML = `
+                            <strong>${apt.doctor}</strong><br>
+                            Date: ${apt.date}, Time: ${apt.time}<br>
+                            Status: <span class="text-${apt.status === 'completed' ? 'success' : 'warning'}">${apt.status}</span>
+                        `;
+                        appointmentsList.appendChild(li);
+                    });
+                }
+            })
+            .catch(error => {
+                alert('Error loading profile: ' + error.message);
+                window.location.href = '/login';
+            });
+
+            // Profile update
+            document.getElementById('profile-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                const formData = new FormData(this);
+                fetch('/profile', {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Authorization': `Bearer ${token}` }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.message) {
+                        // Show success message
+                        alert(data.message);
+                        
+                        // Update profile picture immediately if available
+                        if (data.profile_picture) {
+                            // Force browser to reload the image by adding a timestamp
+                            const imgElement = document.getElementById('profile-picture');
+                            imgElement.src = data.profile_picture + '?t=' + new Date().getTime();
+                            
+                            // Make sure the image is visible
+                            imgElement.style.display = 'block';
+                        } else {
+                            // Refresh the page to get all updated data
+                            location.reload();
+                        }
+                    } else if (data.error) {
+                        alert(data.error);
+                    }
+                })
+                .catch(error => alert('Error updating profile: ' + error));
+            });
+            
+            // Preview image before upload
+            document.getElementById('profile-picture-upload').addEventListener('change', function() {
+                const file = this.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        document.getElementById('profile-picture').src = e.target.result;
+                    }
+                    reader.readAsDataURL(file);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
