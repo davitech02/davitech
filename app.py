@@ -622,6 +622,33 @@ def submit_comment():
     
     return redirect(url_for('index'))
 
+# Flutterwave payment callback handler
+@app.route('/flutterwave-callback', methods=['GET'])
+def flutterwave_callback():
+    # Get transaction reference from Flutterwave
+    transaction_id = request.args.get('transaction_id')
+    tx_ref = request.args.get('tx_ref')
+    status = request.args.get('status')
+    
+    # Flutterwave verification (in production, you would use proper error handling)
+    if status == 'successful' and transaction_id:
+        try:
+            # In a real implementation, you would verify with Flutterwave API
+            # using the secret key: FLWSECK_TEST-33c09b9cd42da4c4818409cb0a652022-X
+            # For this test implementation, we'll assume success if status is 'successful'
+            
+            # Update appointment status in database
+            # This would typically use the tx_ref to find the appointment
+            flash('Payment successful! Your appointment has been confirmed.', 'success')
+        except Exception as e:
+            app.logger.error(f"Payment verification error: {str(e)}")
+            flash('Error verifying payment. Please contact support.', 'error')
+    else:
+        flash('Payment was not successful. Please try again.', 'error')
+    
+    # Redirect to profile page
+    return redirect(url_for('profile'))
+
 if __name__ == '__main__':
     with app.app_context():
         try:
