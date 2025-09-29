@@ -8,6 +8,6 @@ class Config:
     MAIL_SERVER = os.environ.get('MAIL_SERVER', 'smtp.gmail.com')
     MAIL_PORT = int(os.environ.get('MAIL_PORT', 587))
     MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS', 'True').lower() in ['true', 'yes', '1']
-    MAIL_USERNAME = os.environ.get('MAIL_USERNAME', 'your-hospital-email@gmail.com')
-    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD', 'your-email-password')
-    MAIL_DEFAULT_SENDER = os.environ.get('MAIL_DEFAULT_SENDER', 'your-hospital-email@gmail.com')
+    MAIL_USERNAME = os.environ.get('MAIL_USERNAME', 'info@gracelandmultispecialisthospital.com')
+    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD', 'graceland-2012')
+    MAIL_DEFAULT_SENDER = os.environ.get('MAIL_DEFAULT_SENDER', 'info@gracelandmultispecialisthospital.com')
